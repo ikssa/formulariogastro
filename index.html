@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrmulario Practica Gastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+       <a href="https://www.clinicadecuyosa.org/" target="_blank"> <img src="cdc.jpeg" alt="Logo de la empresa" > </a>
+      </div>
+    <div class="formulario">
+        
+        <form action="mailto:gastroenterologia@clinicadecuyo.com.ar" method="POST" enctype="text/plain">
+            <label for="nombre">Nombre y apellido:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+          
+            <label for="obra_social">Obra social:</label><br>
+            <input type="text" id="obra_social" name="obra_social"><br><br>
+          
+            <label for="dni">DNI:</label><br>
+            <input type="number" id="dni" name="dni" required><br><br>
+          
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+          
+            <label for="mail">Mail:</label><br>
+            <input type="email" id="mail" name="mail" required><br><br>
+          
+            <label for="estudio">Estudio a realizar:</label><br><br>
+            <select id="estudio" name="estudio">
+              <option value="estudio1">Estudio 1</option>
+              <option value="estudio2">Estudio 2</option>
+              <option value="estudio3">Estudio 3</option>
+            </select><br><br>
+          
+            <label for="foto_pedido_medico">Foto del pedido médico:</label><br>
+            <input type="file" id="foto_pedido_medico" name="foto_pedido_medico" accept="image/*" required><br><br>
+          
+            <label for="enfermedades">Tiene enfermedades crónicas:</label><br>
+            <input type="checkbox" id="enfermedades_anticoagulado" name="enfermedades" value="anticoagulado">
+            <label for="enfermedades_anticoagulado">Anticoagulado</label>
+            <input type="checkbox" id="enfermedades_obesidad" name="enfermedades" value="obesidad">
+            <label for="enfermedades_obesidad">Obesidad</label>
+            <input  type="checkbox" id="enfermedades_cardiacas" name="enfermedades" value="cardiacas">
+            <label for="enfermedades_cardiacas">Cardiacas</label>
+            <input type="checkbox" id="enfermedades_no" name="enfermedades" value="no" checked>
+            <label for="enfermedades_no">No</label><br><br>
+          
+            <label for="atendido_previamente">¿Ha sido atendido en la clínica anteriormente?:</label><br>
+            <input type="radio" id="atendido_previamente_si" name="atendido_previamente" value="si">
+            <label for="atendido_previamente_si">Sí</label>
+            <input type="radio" id="atendido_previamente_no" name="atendido_previamente" value="no" checked>
+            <label for="atendido_previamente_no">No</label><br><br>
+          <div class="botones">
+            <input type="submit" value="Enviar">
+        </div>
+          </form>
+        </div>
+</body>
+</html>
